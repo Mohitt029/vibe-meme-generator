@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Meme Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vibe Meme Generator 😎</h1>
+    <div class="meme-editor">
+      <div class="controls">
+        <label for="image-select">Choose Meme:</label>
+        <select id="image-select">
+          <option value="images/distracted_boyfriend.jpg">Distracted Boyfriend</option>
+          <option value="images/drake_meme.jpg">Drake Hotline Bling</option>
+          <option value="images/success_kid.jpg">Success Kid</option>
+        </select>
+
+        <label for="top-text">Top Text:</label>
+        <input type="text" id="top-text" placeholder="Enter top text" maxlength="50">
+
+        <label for="bottom-text">Bottom Text:</label>
+        <input type="text" id="bottom-text" placeholder="Enter bottom text" maxlength="50">
+
+        <label>Edit Text:</label>
+        <div class="text-selection">
+          <label><input type="radio" name="text-select" value="top" checked> Top Text</label>
+          <label><input type="radio" name="text-select" value="bottom"> Bottom Text</label>
+        </div>
+
+        <label for="text-color">Text Color:</label>
+        <input type="color" id="text-color" value="#ffffff">
+
+        <label for="outline-color">Outline Color:</label>
+        <input type="color" id="outline-color" value="#000000">
+
+        <label for="font-size">Font Size:</label>
+        <input type="number" id="font-size" value="30" min="20" max="50">
+
+        <label for="font-style">Font Style:</label>
+        <select id="font-style">
+          <option value="Impact">Impact</option>
+          <option value="Arial">Arial</option>
+          <option value="Comic Sans MS">Comic Sans MS</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Helvetica">Helvetica</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+
+        <label for="bg-color">Canvas Background Color:</label>
+        <input type="color" id="bg-color" value="#000000">
+
+        <button id="download-btn">Download Meme</button>
+        <p class="instructions">Click and drag on the canvas to move selected text</p>
+      </div>
+      <div class="meme-canvas">
+        <canvas id="meme-canvas"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
