@@ -4,18 +4,28 @@ A playful, web-based meme generator built for the In-House Vibe Builders assignm
 Features
 
 *Choose from three meme templates (Distracted Boyfriend, Drake Hotline Bling, Success Kid).
+
 *Add custom top and bottom text with wrapping for long text.
+
 *Customize text color, outline color, font size (20-50px), and font style.
+
 *Drag and drop top or bottom text anywhere on the canvas for creative placement.
+
 *Set canvas background color for fallback or style.
+
 *Download memes as PNG images.
+
 *Share memes via URL with encoded parameters.
+
 *Responsive, playful design with vibrant colors.
+
 
 Tech Stack
 
 *Frontend: HTML, CSS, JavaScript
+
 *Library: html2canvas (for image downloads)
+
 *Deployment: Netlify
 
 Setup
